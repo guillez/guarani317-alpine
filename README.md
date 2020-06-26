@@ -40,7 +40,7 @@ EJECUCION POST INSTALACION DESDE LA CARPETA /data/cfg
 -------------------------------------------------------------
 
 Nombre del Alias (por defecto "toba"): 
-Por favor, ingrese su n�mero de desarrollador (ENTER utilizar� 0): 718
+Por favor, ingrese su n�mero de desarrollador (ENTER utilizar� 0): 
 Se trata de una instalacion de producci�n? (Si o No)(s/n):  n
 Nombre de la instalaci�n (ej: Andromeda): : guarani
 PostgreSQL - Ubicaci�n (ENTER utilizar� localhost): postgres
