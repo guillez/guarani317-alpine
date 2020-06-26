@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: guarani
+  name: guarani
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: guarani
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: guarani
+    spec:
+      containers:
+      - image: guarani3/guarani317-alpine:latest
+        imagePullPolicy: ""
+        name: guarani317
+        ports:
+        - containerPort: 80
+        resources: {}
+        volumeMounts:
+        - mountPath: /data
+          name: guarani-pv-claim
+      restartPolicy: Always
+      serviceAccountName: ""
+      volumes:
+      - name: guarani-pv-claim
+        persistentVolumeClaim:
+          claimName: guarani-pv-claim
+status: {}

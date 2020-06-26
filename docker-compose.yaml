@@ -1,0 +1,40 @@
+version: '3.3'
+
+services:
+
+  # Servicio de postgres 9.6
+  postgres:
+    image: "postgres:9.6-alpine"
+    container_name: postgres
+    build:
+      context: .
+      dockerfile: postgres/Dockerfile
+      args:
+        locale: "${PG_LOCALE}"
+    expose:
+      - "${POSTGRES_PORT}"
+    volumes:
+      - "/volumen-postgres:/var/lib/postgresql/data"  
+    environment:
+      POSTGRES_DB: "${POSTGRES_DB}"
+      POSTGRES_USER: "${POSTGRES_USER}"
+      POSTGRES_PASSWORD: "${POSTGRES_PASSWORD}"
+    
+  # Servicio de Apache2 y php7.1
+  guarani:
+    image: guarani-alpine
+    container_name: guarani317
+    build:
+      context: .
+      dockerfile: guarani/Dockerfile
+      args:
+        APACHE_SERVER_NAME: ${DOMINIO}    
+        COLAB_USUARIO: ${COLAB_USUARIO}
+        COLAB_CLAVE: ${COLAB_CLAVE}
+        COLAB_DESARROLLADOR: ${COLAB_DESARROLLADOR}        
+    ports:
+      - "${APACHE_IP}:${APACHE_PORT}:80"
+    volumes:
+      - "/volumen-guarani:/data"       
+    links:
+      - postgres

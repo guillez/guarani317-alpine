@@ -1,0 +1,15 @@
+Ejecutar ./ejecutar.sh
+
+ejecutar kubectl get service y se usa EXTERNAL-IP
+
+probar en navegador EXTERNAL-IP-loadBalancer:8080
+
+El volumen se debe configurar para tener el sistema en carpeta /data
+
+EL sistema debe estar instalado 
+
+Se crean 2 volumenes para postgres y guarani
+
+se despliega apache-php(para guarani) y postgres
+
+Se ejecutar un loadBalancer para acceder a apache con puerto 8080 en la ip del loadBalancer
