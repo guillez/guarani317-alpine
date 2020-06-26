@@ -83,7 +83,7 @@ schema = "negocio"
 #acorde a los puertos configurados se puede acceder a
 
 #http://localhost:7081/toba_editor/3.0/aplicacion.php
-#http://localhost:7081/guarani/3.16/
+#http://localhost:7081/guarani/3.17/
 
 #EN .env se encuentran configuraciones del docker-compose y en la carpeta /guarani estan las del docker específico
 
