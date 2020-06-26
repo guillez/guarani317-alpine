@@ -77,14 +77,14 @@ schema = "negocio"
 
 
 
-# IMPORTANTE: LUEGO DE REINICIADO EL CONTENEDOR SE PUEDEN ACCEDER A LAS URLS ABAJO MENCIONADAS
-# si falla jasper se puede ejecutar en /app/jasper.sh 
+#IMPORTANTE: LUEGO DE REINICIADO EL CONTENEDOR SE PUEDEN ACCEDER A LAS URLS ABAJO MENCIONADAS
+#si falla jasper se puede ejecutar en /app/jasper.sh 
 
-# acorde a los puertos configurados se puede acceder a
+#acorde a los puertos configurados se puede acceder a
 
 #http://localhost:7081/toba_editor/3.0/aplicacion.php
 #http://localhost:7081/guarani/3.16/
 
-# EN .env se encuentran configuraciones del docker-compose y en la carpeta /guarani estan las del docker específico
+#EN .env se encuentran configuraciones del docker-compose y en la carpeta /guarani estan las del docker específico
 
 
