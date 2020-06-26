@@ -10,7 +10,7 @@ spec:
   accessModes:
     - ReadWriteOnce
   capacity:
-    storage: 100Mi
+    storage: 5Gi
   hostPath:
     path: /data
 ---
@@ -27,6 +27,6 @@ spec:
     - ReadWriteMany
   resources:
     requests:
-      storage: 100Mi
+      storage: 5Gi
 status: {}
 
