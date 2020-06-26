@@ -24,17 +24,13 @@ docker exec -ti guarani bash
 
 cd /data/cfg
 
-# si se desea instalar el entorno ejecutar
+#si se desea instalar el entorno ejecutar
 
-# IMPORTANTE: en la carpeta /guarani317_volumen se debe bajar el repositorio de Guarani de Colab
-
-# este tiene que tener la estructura siguiente: /data/local/g3gestion/  
-
-# en esta carpeta debe estar el proyecto. En la carpeta /data/cfg se encuentran 
-
-# varibales(son los datos de acceso a colab) - instalar.sh es el archivo que permite la isntalacion del sistema
-
-# el archivo .env del raiz contiene variables de configuracion de apache y postgres
+#IMPORTANTE: en la carpeta /guarani317_volumen se debe bajar el repositorio de Guarani de Colab
+#este tiene que tener la estructura siguiente: /data/local/g3gestion/  
+#en esta carpeta debe estar el proyecto. En la carpeta /data/cfg se encuentran 
+#varibales(son los datos de acceso a colab) - instalar.sh es el archivo que permite la isntalacion del sistema
+#el archivo .env del raiz contiene variables de configuracion de apache y postgres
 
 EJECUCION POST INSTALACION DESDE LA CARPETA /data/cfg
 -------------------------------------------------------------
